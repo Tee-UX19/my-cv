@@ -1,0 +1,42 @@
+# LaTeX auxiliary files
+*.aux
+*.bbl
+*.blg
+*.fls
+*.fdb_latexmk
+*.log
+*.out
+*.synctex.gz
+*.synctex(busy)
+*.nav
+*.snm
+*.toc
+*.idx
+*.ind
+*.lof
+*.lot
+
+# LaTeX build directories
+_build/
+_minted-*/
+
+# VS Code settings (keep local)
+.vscode/
+!.vscode/settings.json
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Backup files
+*~
+*.bak
+*.tmp
+
+# PDF files (optional - remove this line if you want to track PDFs)
+# *.pdf

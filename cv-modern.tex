@@ -1,0 +1,143 @@
+\documentclass[11pt,a4paper]{article}
+
+% Packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=0.75in]{geometry}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+
+% Remove page numbers
+\pagestyle{empty}
+
+% Hyperlink setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=blue,
+    pdfborder={0 0 0}
+}
+
+% Section formatting
+\titleformat{\section}{\large\bfseries\uppercase}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{12pt}{6pt}
+
+% Custom commands
+\newcommand{\cventry}[6]{
+    \textbf{#2} \hfill #1 \\
+    \textit{#3} \hfill #4 \\
+    #6
+    \vspace{8pt}
+}
+
+\newcommand{\cvproject}[4]{
+    \textbf{#1} \hfill #2 \\
+    \textit{#3} \\
+    #4
+    \vspace{8pt}
+}
+
+\begin{document}
+
+% Header
+\begin{center}
+    {\LARGE \textbf{Timothy-Joseph Godwin}} \\
+    \vspace{4pt}
+    Computer Science Student \& Software Engineer \\
+    \vspace{4pt}
+    Birmingham, UK $\cdot$ +44 7961 585 772 $\cdot$ \href{mailto:tj.godwin1904@gmail.com}{tj.godwin1904@gmail.com} \\
+    \href{https://linkedin.com/in/timothy-joseph-godwin}{LinkedIn: Timothy-Joseph Godwin} $\cdot$ \href{https://github.com/Tee-UX19}{GitHub: Tee-UX19}
+\end{center}
+
+\vspace{12pt}
+
+% Education
+\section{Education}
+
+\cventry{2023--Present}{Master of Engineering in Computer Science with Software Engineering}{University of Birmingham}{Birmingham, UK}{Expected First Class Honours}{
+    \begin{itemize}[leftmargin=20pt, noitemsep, topsep=0pt]
+        \item Year 1 Average: 72\%
+        \item Relevant Coursework: Full Stack App Development, Object Oriented Programming, Data Structures, Software Engineering and Professional Practices, Functional Programming, Artificial Intelligence
+    \end{itemize}
+}
+
+\cventry{2023}{Foundation Certificate in Science and Engineering}{Kaplan International College}{London, UK}{}{
+    \begin{itemize}[leftmargin=20pt, noitemsep, topsep=0pt]
+        \item Mathematics: 90\%, Information Technology: 88\%, Extended Project: 72\%
+    \end{itemize}
+}
+
+\cventry{2016--2022}{International General Certificate of Secondary Education}{British Spring College}{Awka, Nigeria}{}{
+    \begin{itemize}[leftmargin=20pt, noitemsep, topsep=0pt]
+        \item Results: English (A), Mathematics (A*), Biology (A*), Chemistry (A*), Physics (A*)
+        \item SAT Score: 1390 (97th percentile), IELTS: 8.0/9.0
+    \end{itemize}
+}
+
+% Technical Skills
+\section{Technical Skills}
+
+\textbf{Programming Languages:} C, Python, Java, JavaScript, TypeScript, Haskell, PowerShell \\
+\textbf{Web Technologies:} React, Angular, Spring Boot, HTML/CSS, Bootstrap, Express.js \\
+\textbf{Databases:} PostgreSQL \\
+\textbf{Tools \& Platforms:} Git, GitHub, GitLab, Docker, Azure, VS Code, WSL, JHipster, Vercel \\
+\textbf{Development Practices:} CI/CD, Version Control, Agile Methodologies, Test-Driven Development
+
+% Projects
+\section{Projects}
+
+\cvproject{Grocery Shopping App}{2024}{Full Stack Web Application}{
+    \begin{itemize}[leftmargin=20pt, noitemsep, topsep=0pt]
+        \item Developed shared grocery shopping application using React and Bootstrap frontend with Express.js backend
+        \item Implemented RESTful API design and responsive user interface for cross-platform compatibility
+        \item Utilized GitHub Actions for automated CI/CD pipeline and deployment workflows
+    \end{itemize}
+}
+
+\cvproject{Campus Events Web Application}{2024}{Team Development Project}{
+    \begin{itemize}[leftmargin=20pt, noitemsep, topsep=0pt]
+        \item Collaborated with team to build event management platform using JHipster, Spring Boot, Angular, and PostgreSQL
+        \item Developed user authentication system and event browsing functionality for university students
+        \item Deployed application using Azure cloud services with Docker containerization
+    \end{itemize}
+}
+
+\cvproject{Network Firewall Program}{2024}{Systems Programming}{
+    \begin{itemize}[leftmargin=20pt, noitemsep, topsep=0pt]
+        \item Built firewall application in C using networking and multithreading libraries
+        \item Implemented rule-based connection filtering system for IP addresses and port ranges
+        \item Applied advanced systems programming concepts for network security applications
+    \end{itemize}
+}
+
+% Experience
+\section{Experience}
+
+\cventry{September 2022--November 2022}{Medical File Clerk}{Obioma Specialist Hospital}{Awka, Nigeria}{}{
+    \begin{itemize}[leftmargin=20pt, noitemsep, topsep=0pt]
+        \item Managed efficient retrieval and organization of patient medical records in high-volume healthcare environment
+        \item Digitized over 100 paper medical records using Microsoft Excel, improving data accessibility and storage
+        \item Maintained accurate patient file indexes and resolved filing discrepancies while ensuring compliance
+    \end{itemize}
+}
+
+\cventry{October 2021--August 2022}{Head Boy (Student Leadership Role)}{British Spring College}{Awka, Nigeria}{}{
+    \begin{itemize}[leftmargin=20pt, noitemsep, topsep=0pt]
+        \item Led team of 21 prefects in collaborative school management and student welfare initiatives
+        \item Coordinated and executed over 15 school activities and events, demonstrating project management skills
+        \item Delivered presentations and announcements to audiences of 600+ students at assemblies and school events
+    \end{itemize}
+}
+
+% Additional Information
+\section{Additional Information}
+
+\textbf{Languages:} English (Native), Igbo (Conversational), Spanish (Basic) \\
+\textbf{Professional Development:} Self-directed learning through The Odin Project web development curriculum \\
+\textbf{Achievements:} Silver medallist in state-level Physics and Mathematics Olympiads; Top 3 graduating student \\
+\textbf{Interests:} Football, Singing, Language Learning, Web Development
+
+\end{document}
