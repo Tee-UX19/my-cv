@@ -2,7 +2,7 @@
 # Usage: .\build-cv.ps1 [cv-name]
 
 param(
-    [string]$CVName = "cv-modern"
+    [string]$CVName = "Timothy-Joseph CV"
 )
 
 Write-Host "Building CV: $CVName.tex" -ForegroundColor Green
