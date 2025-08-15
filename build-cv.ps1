@@ -38,11 +38,11 @@ try {
         Write-Host "CV compiled successfully!" -ForegroundColor Green
         Write-Host "Output: $CVName.pdf" -ForegroundColor Cyan
         
-        # Open the PDF if it exists
-        if (Test-Path "$CVName.pdf") {
-            Write-Host "Opening PDF..." -ForegroundColor Blue
-            Start-Process "$CVName.pdf"
-        }
+        # Open the PDF if it exists (commented out to prevent auto-opening)
+        # if (Test-Path "$CVName.pdf") {
+        #     Write-Host "Opening PDF..." -ForegroundColor Blue
+        #     Start-Process "$CVName.pdf"
+        # }
     } else {
         Write-Host "Compilation failed!" -ForegroundColor Red
         Write-Host "LaTeX output:" -ForegroundColor Yellow
