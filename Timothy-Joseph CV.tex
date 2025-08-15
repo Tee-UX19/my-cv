@@ -1,12 +1,12 @@
-\documentclass[10pt, a4paper]{article}
+\documentclass[11pt, a4paper]{article}
 
 % Packages:
 \usepackage[
     ignoreheadfoot, % set margins without considering header and footer
-    top=1 cm, % seperation between body and page edge from the top
-    bottom=1 cm, % seperation between body and page edge from the bottom
-    left=1cm, % seperation between body and page edge from the left
-    right=1cm, % seperation between body and page edge from the right
+    top=0.7 cm, % seperation between body and page edge from the top
+    bottom=0.7 cm, % seperation between body and page edge from the bottom
+    left=0.8cm, % seperation between body and page edge from the left
+    right=0.8cm, % seperation between body and page edge from the right
     footskip=1.0 cm, % seperation between body and footer
     % showframe % for debugging 
 ]{geometry} % for adjusting page geometry
@@ -48,6 +48,7 @@
 
 % Some settings:
 \raggedright
+\linespread{0.98} % slightly reduce line spacing
 \AtBeginEnvironment{adjustwidth}{\partopsep0pt} % remove space before adjustwidth environment
 \pagestyle{empty} % no header or footer
 \setcounter{secnumdepth}{0} % no section numbering
@@ -63,20 +64,20 @@
     -1pt
 }{
     % top space:
-    0.3 cm
+    0.2 cm
 }{
     % bottom space:
-    0.2 cm
+    0.1 cm
 } % section title spacing
 
 \renewcommand\labelitemi{$\vcenter{\hbox{\small$\bullet$}}$} % custom bullet points
 \newenvironment{highlights}{
     \begin{itemize}[
-        topsep=0.10 cm,
-        parsep=0.10 cm,
+        topsep=0.05 cm,
+        parsep=0.05 cm,
         partopsep=0pt,
         itemsep=0pt,
-        leftmargin=20pt
+        leftmargin=15pt
     ]
 }{
     \end{itemize}
@@ -183,12 +184,12 @@
         \mbox{\hrefWithoutArrow{https://github.com/Tee-UX19}{GitHub}}%
     \end{header}
 
-    \vspace{5 pt - 0.3 cm}
+    \vspace{3 pt - 0.3 cm}
 
     \section{Education}
 
     \begin{twocolentry}{
-        Sept 2023 -- 2027 (Expected) \\
+        Sept 2023 -- 2027 \\
         \textit{Birmingham, UK}
     }
         \textbf{University of Birmingham}
@@ -204,7 +205,7 @@
         \end{highlights}
     \end{onecolentry}
 
-    \vspace{0.2 cm}
+    \vspace{0.1 cm}
 
     \begin{twocolentry}{
         Jan -- June 2023 \\
@@ -215,7 +216,7 @@
         Foundation Certificate in Science and Engineering
     \end{twocolentry}
 
-    \vspace{0.10 cm}
+    \vspace{0.05 cm}
     \begin{onecolentry}
         \begin{highlights}
             \item \textbf{Cumulative Average:} 83.33\%
@@ -245,25 +246,25 @@
         \textbf{Programming Languages:} Python, Java, JavaScript, TypeScript, C, Haskell, PowerShell
     \end{onecolentry}
 
-    \vspace{0.2 cm}
+    \vspace{0.1 cm}
 
     \begin{onecolentry}
         \textbf{Data Analysis \& ML:} Pandas, Scikit-learn, PyTorch, Tableau, Data Visualization, Statistical Analysis
     \end{onecolentry}
 
-    \vspace{0.2 cm}
+    \vspace{0.1 cm}
 
     \begin{onecolentry}
         \textbf{Web Technologies:} React, Angular, Spring Boot, HTML/CSS, Bootstrap, Express.js
     \end{onecolentry}
 
-    \vspace{0.2 cm}
+    \vspace{0.1 cm}
 
     \begin{onecolentry}
         \textbf{Databases \& Tools:} PostgreSQL, Git, GitHub, Docker, Azure, VS Code, WSL, JHipster, Vercel
     \end{onecolentry}
 
-    \vspace{0.2 cm}
+    \vspace{0.1 cm}
 
     % \begin{onecolentry}
     %     \textbf{Development Practices:} CI/CD, Agile Methodologies, Test-Driven Development, Version Control
@@ -290,7 +291,7 @@
         \end{highlights}
     \end{onecolentry}
 
-    \vspace{0.2 cm}
+    \vspace{0.1 cm}
 
     \begin{twocolentry}{
         Sept 2022 -- Nov 2022 \\
@@ -301,7 +302,7 @@
         Medical File Clerk
     \end{twocolentry}
 
-    \vspace{0.10 cm}
+    \vspace{0.05 cm}
     \begin{onecolentry}
         \begin{highlights}
             \item Managed efficient retrieval and organization of patient medical records in high-volume healthcare environment
@@ -310,7 +311,7 @@
         \end{highlights}
     \end{onecolentry}
 
-    \vspace{0.15 cm}
+    \vspace{0.1 cm}
 
     \section{Projects}
 
@@ -346,7 +347,7 @@
         \end{highlights}
     \end{onecolentry}
 
-    \vspace{0.2 cm}
+    \vspace{0.05 cm}
 
     \begin{twocolentry}{
         \href{https://github.com/Tee-UX19}{github.com/Tee-UX19}
@@ -354,7 +355,7 @@
         \textbf{Network Firewall Program}
     \end{twocolentry}
 
-    \vspace{0.10 cm}
+    \vspace{0.05 cm}
     \begin{onecolentry}
         \begin{highlights}
             \item Built firewall application in C using networking and multithreading libraries
@@ -369,19 +370,17 @@
         \textbf{Languages:} English (Fluent), Igbo (Basic), Spanish (Learning)
     \end{onecolentry}
 
-    \vspace{0.2 cm}
+    \vspace{0.1 cm}
 
     \begin{onecolentry}
         \textbf{Professional Development:} Preparing for AWS Cloud Practitioner certification; self-directed learning on deep neural networks through Udemy; Learning web development through the Odin Project curriculum
     \end{onecolentry}
 
-    \vspace{0.2 cm}
+    \vspace{0.1 cm}
 
     \begin{onecolentry}
         \textbf{Achievements:} 2023/24 UG Outstanding Achievement Award (SRM Funded); Silver medallist in state-level Physics and Mathematics Olympiads; Top 3 graduating student \& Best Student in Further Mathematics (British Spring College)
     \end{onecolentry}
-
-    \vspace{0.2 cm}
 
     % \begin{onecolentry}
     %     \textbf{Interests:} Football, Singing, Language Learning, Web Development
