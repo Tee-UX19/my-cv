@@ -3,13 +3,11 @@
 % Packages:
 \usepackage[
     ignoreheadfoot, % set margins without considering header and footer
-    top=1 cm, % seperation between body and page edge from the top
-    bottom=1 cm, % seperation between body and page edge from the bottom
+    top=1 cm, % separation between body and page edge from the top
+    bottom=1 cm, % separation between body and page edge from the bottom
     left=1cm, % seperation between body and page edge from the left
-    right=1cm, % s    % \begin{onecolentry}
-    %     \textbf{Professional Development:} Preparing for AWS Cloud Practitioner certification; self-directed learning on deep neural networks through Udemy; Learning web development through the Odin Project curriculum
-    % \end{onecolentry}ration between body and page edge from the right
-    footskip=1.0 cm, % seperation between body and footer
+    right=1cm, % seperation between body and page edge from the right
+    footskip=1.0 cm, % separation between body and footer
     % showframe % for debugging 
 ]{geometry} % for adjusting page geometry
 \usepackage{titlesec} % for customizing section titles
@@ -55,7 +53,7 @@
 \setcounter{secnumdepth}{0} % no section numbering
 \setlength{\parindent}{0pt} % no indentation
 \setlength{\topskip}{0pt} % no top skip
-\setlength{\columnsep}{0.15cm} % set column seperation
+\setlength{\columnsep}{0.15cm} % set column separation
 \pagenumbering{gobble} % no page numbering
 
 \titleformat{\section}{\needspace{4\baselineskip}\bfseries\large}{}{0pt}{}[\vspace{1pt}\titlerule]
@@ -135,21 +133,10 @@
     \par\kern\topsep
 } % new environment for the header
 
-% \newcommand{\placelastupdatedtext}{% \placetextbox{<horizontal pos>}{<vertical pos>}{<stuff>}
-%   \AddToShipoutPictureFG*{% Add <stuff> to current page foreground
-%     \put(
-%         \LenToUnit{\paperwidth-2 cm-0 cm+0.05cm},
-%         \LenToUnit{\paperheight-1.0 cm}
-%     ){\vtop{{\null}\makebox[0pt][c]{
-%         \small\color{gray}\textit{Last updated in August 2025}\hspace{\widthof{Last updated in August 2025}}
-%     }}}%
-%   }%
-% }%
 
 % save the original href command in a new command:
 \let\hrefWithoutArrow\href
 
-% new command for external links:
 
 \begin{document}
     \newcommand{\AND}{\unskip
@@ -159,7 +146,6 @@
     \newsavebox\ANDbox
     \sbox\ANDbox{$|$}
 
-    % \placelastupdatedtext
     \begin{header}
         \fontsize{25 pt}{25 pt}\selectfont\bfseries Timothy-Joseph Godwin
 
@@ -223,21 +209,85 @@
         \end{highlights}
     \end{onecolentry}
 
-    % \vspace{0.2 cm}
 
-    % \begin{twocolentry}{
-    %     2016 -- 2022
-    % }
-    %     \textbf{British Spring College}, International General Certificate of Secondary Education
-    % \end{twocolentry}
+    \section{Experience}
 
-    % \vspace{0.10 cm}
-    % \begin{onecolentry}
-    %     \begin{highlights}
-    %         \item English (A), Mathematics (A*), Biology (A*), Chemistry (A*), Physics (A*)
-    %         \item SAT Score: 1390 (97th percentile), IELTS: 8.0/9.0
-    %     \end{highlights}
-    % \end{onecolentry}
+    \begin{twocolentry}{
+        July 2025 -- Aug 2025 \\
+        \textit{London, UK}
+    }
+        \textbf{Uptrail}
+        
+        Data Analysis Intern/Trainee
+    \end{twocolentry}
+
+    \vspace{0.10 cm}
+    \begin{onecolentry}
+        \begin{highlights}
+            \item Cleaned and analyzed over 300 customer sign-ups and 120+ support tickets using Pandas, uncovering acquisition trends, regional gaps, and plan preferences to inform targeted marketing strategies for SaaS and e-commerce clients
+            \item Built Scikit-learn logistic regression model on 1,494 streaming customers achieving 76.6\% accuracy, identifying mobile usage and geographic patterns as key churn drivers for targeted retention strategies
+            \item Designed interactive Tableau dashboard integrating 3 datasets (15,822 records) with 6 calculated KPIs, enabling executive strategic planning through geographic mapping and customer segmentation analysis
+            \item Analyzed 2,992 sales records across 499 customers to identify top loyalty tiers and delivery optimization opportunities (41\% delay reduction potential) through 6 data visualizations and strategic analysis
+        \end{highlights}
+    \end{onecolentry}
+
+    \vspace{0.15 cm}
+
+    \begin{twocolentry}{
+        Sept 2022 -- Nov 2022 \\
+        \textit{Awka, Nigeria}
+    }
+        \textbf{Obioma Specialist Hospital}
+        
+        Medical File Clerk
+    \end{twocolentry}
+
+    \vspace{0.10 cm}
+    \begin{onecolentry}
+        \begin{highlights}
+            \item Managed efficient retrieval and organization of patient medical records in high-volume healthcare environment
+            \item Digitized over 100 paper medical records using Microsoft Excel, improving data accessibility and storage
+            \item Maintained accurate patient file indexes and resolved filing issues, communicating with medical staff where necessary
+        \end{highlights}
+    \end{onecolentry}
+
+    \vspace{0.15 cm}
+
+    \section{Projects}
+
+
+    \begin{twocolentry}{
+        \textit{JHipster, Angular, PostgreSQL}
+    }
+        \textbf{Campus Events Web Application}
+    \end{twocolentry}
+
+    \vspace{0.10 cm}
+    \begin{onecolentry}
+        \begin{highlights}
+            \item Developed a full-stack web application for university students to discover and review campus events and societies as part of a 7-member team
+            \item Led CI/CD pipeline implementation using Azure for deployment, Docker containerization, and GitHub Actions runners
+            \item Enhanced user experience by developing responsive design for mobile screen sizes and other accessibility features
+            \item Architected RESTful APIs with Spring Boot and resolved database migration issues using Liquibase
+        \end{highlights}
+    \end{onecolentry}
+
+    \vspace{0.2 cm}
+
+    \begin{twocolentry}{
+        \textit{C, Networking, Threading}
+    }
+        \textbf{Network Firewall Program}
+    \end{twocolentry}
+
+    \vspace{0.10 cm}
+    \begin{onecolentry}
+        \begin{highlights}
+            \item Architected multithreaded firewall server using pthreads with mutex synchronization, supporting concurrent client connections and dual-mode operation (interactive CLI and IPv6 network server)
+            \item Implemented rule management system with linked-list data structures for Add/Delete/List/Check operations on IP range and port range filtering rules
+            \item Engineered advanced IP validation using inet\_pton() and network byte order conversions, enabling precise IP range matching and connection acceptance/rejection decisions
+        \end{highlights}
+    \end{onecolentry}
 
     \section{Technical Skills}
 
@@ -265,100 +315,19 @@
 
     \vspace{0.2 cm}
 
-    % \begin{onecolentry}
-    %     \textbf{Development Practices:} CI/CD, Agile Methodologies, Test-Driven Development, Version Control
-    % \end{onecolentry}
-
-    \section{Experience}
-
-    \begin{twocolentry}{
-        July 2025 -- Aug 2025 \\
-        \textit{London, UK}
-    }
-        \textbf{Uptrail}
-        
-        Data Analysis Intern/Trainee
-    \end{twocolentry}
-
-    \vspace{0.10 cm}
-    \begin{onecolentry}
-        \begin{highlights}
-            \item Cleaned and analyzed over 300 customer sign-ups and 120+ support tickets using Pandas, uncovering acquisition trends, regional gaps, and plan preferences to inform targeted marketing strategies for SaaS and e-commerce clients
-            \item Built Scikit-learn logistic regression model on 1,494 streaming customers achieving 76.6\% accuracy, identifying mobile usage and geographic patterns as key churn drivers for targeted retention strategies
-            \item Designed interactive Tableau dashboard integrating 3 datasets (15,822 records) with 6 calculated KPIs, enabling executive strategic planning through geographic mapping and customer segmentation analysis
-            \item Analyzed 2,992 sales records across 499 customers to identify top loyalty tiers and delivery optimization opportunities (41\% delay reduction potential) through 6 data visualizations and strategic analysis
-        \end{highlights}
-    \end{onecolentry}
-
-    \vspace{0.15 cm}
-
-    \section{Projects}
-
-    % \begin{twocolentry}{
-    %     \href{https://github.com/Tee-UX19}{github.com/Tee-UX19}
-    % }
-    %     \textbf{Grocery Shopping App}
-    % \end{twocolentry}
-
-    % \vspace{0.10 cm}
-    % \begin{onecolentry}
-    %     \begin{highlights}
-    %         \item Developed shared grocery shopping application using React and Bootstrap frontend with Express.js backend
-    %         \item Implemented RESTful API design and responsive user interface for cross-platform compatibility
-    %         \item Utilized GitHub Actions for automated CI/CD pipeline and deployment workflows
-    %     \end{highlights}
-    % \end{onecolentry}
-
-    % \vspace{0.2 cm}
-
-    \begin{twocolentry}{
-        \textit{JHipster, Angular, PostgreSQL}
-    }
-        % \href{https://github.com/Tee-UX19}{github.com/Tee-UX19}
-        \textbf{Campus Events Web Application}
-    \end{twocolentry}
-
-    \vspace{0.10 cm}
-    \begin{onecolentry}
-        \begin{highlights}
-            \item Developed a full-stack web application for university students to discover and review campus events and societies as part of a 7-member team
-            \item Led CI/CD pipeline implementation using Azure for deployment, Docker containerization, and GitHub Actions runners
-            \item Enhanced user experience by developing responsive design for mobile screen sizes and other accessibility features
-            \item Architected RESTful APIs with Spring Boot and resolved database migration issues using Liquibase
-        \end{highlights}
-    \end{onecolentry}
-
-    \vspace{0.2 cm}
-
-    \begin{twocolentry}{
-        \textit{C, Networking, Threading}
-    }
-        % \href{https://github.com/Tee-UX19}{github.com/Tee-UX19}
-        \textbf{Network Firewall Program}
-    \end{twocolentry}
-
-    \vspace{0.10 cm}
-    \begin{onecolentry}
-        \begin{highlights}
-            \item Architected multithreaded firewall server using pthreads with mutex synchronization, supporting concurrent client connections and dual-mode operation (interactive CLI and IPv6 network server)
-            \item Implemented  rule management system with linked-list data structures for Add/Delete/List/Check operations on IP range and port range filtering rules
-            \item Engineered advanced IP validation using inet\_pton() and network byte order conversions, enabling precise IP range matching and connection acceptance/rejection decisions
-        \end{highlights}
-    \end{onecolentry}
-
     \section{Additional Information}
 
     \begin{onecolentry}
         \textbf{Languages:} English (Fluent), Igbo (Basic), Spanish (Learning)
     \end{onecolentry}
 
-    \vspace{0.2 cm}
+    \vspace{0.1 cm}
 
-    \begin{onecolentry}
-        \textbf{Professional Development:} Preparing for AWS Cloud Practitioner certification; self-directed learning on deep neural networks through Udemy; Learning web development through the Odin Project curriculum
-    \end{onecolentry}
+    % \begin{onecolentry}
+    %     \textbf{Professional Development:} Preparing for AWS Cloud Practitioner certification; self-directed learning on deep neural networks through Udemy; Learning web development through the Odin Project curriculum
+    % \end{onecolentry}
 
-    \vspace{0.2 cm}
+    % \vspace{0.1 cm}
 
     \begin{onecolentry}
         \textbf{Achievements:} 2023/24 UG Outstanding Achievement Award (SRM Funded); Silver medallist in state-level Physics and Mathematics Olympiads; Top 3 graduating student \& Best Student in Further Mathematics (British Spring College)
@@ -366,8 +335,5 @@
 
     \vspace{0.2 cm}
 
-    % \begin{onecolentry}
-    %     \textbf{Interests:} Football, Singing, Language Learning, Web Development
-    % \end{onecolentry}
 
 \end{document}
